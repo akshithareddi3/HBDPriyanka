@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Your Birthday</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+  
+   <!-- <h1> HAPPY BIRTHDAY PRIYANKA </h1> -->
+   <nav>
+    <ul>
+        <li class="logo-text">HI,PRIYANKA</li>
+        <li>
+            <ul>
+                <li> <a href="#home" class="nav-link">HOME</a></li>
+                <li> <a href="#PICTURES" class="nav-link">PICTURES</a></li>
+                <li> <a href="#WISHES" class="nav-link link-button">WISHES</a></li>
+                <li> <a href="#MY-MESSAGE" class="nav-link">MY-MESSAGE</a></li>
+                
+                <li> <a href="#GALLERY" class="nav-link">GALLERY</a> </li>
+            </ul>
+        </li>
+    </ul>
+ </nav>
+   <header id="home">
+        <div>
+          <h2>YEE <br>  HEE</h2>
+          <h1>ITS YOUR <br> BIRTHDAY </h1> </div>  
+          <img src="./Priyanka/IMG-20190503-WA0002.jpg" alt=""style="width=700px;height:700px;border-radius:50%;padding:100px;">
+   </header>
+    
+    <section id="PICTURES">
+        <img src="./Priyanka/IMG_20191103_172850.jpg" alt="" style="width:400px;height:500px;"> 
+        
+        <img src="./Priyanka/IMG_20200114_172727_147.jpg" alt="" style="width:400px;height:500px;">
+        <img src="./Priyanka/InShot_20180604_115418449.jpg" alt="" style="width:400px;height:500px;">
+    </section>
+    <br> <br>
+<hr>
+<div class="slideshow-container" id="WISHES">
+
+  <div class="mySlides1 fade">
+    <div class="numbertext">1/ 5</div>
+    <img src="./Priyanka/IMG_20191103_173325 (1).jpg" style="width:100%">
+    <div class="text">Happy birthday priyanka shetty kajjam.</div>
+  </div>
+  <div class="mySlides1 fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="./Priyanka/WhatsApp Image 2020-09-12 at 11.07.48 AM.jpeg" style="width:100%">
+    <div class="text">Happy birthday priyanka!</div>
+  </div>
+  
+  <div class="mySlides1 fade">
+    <div class="numbertext">3/ 5</div>
+    <img src="./Priyanka/WhatsApp Image 2020-09-05 at 6.28.54 PM.jpeg" style="width:100%">
+    <div class="text">No matter we argue, we fight,    we even stop talking to each other <br> at times, but in the end I'll care for u nd our friendship never die🤗</div>
+  </div>
+  
+  <div class="mySlides1 fade">
+    <div class="numbertext">4/ 5</div>
+    <img src="./Priyanka/WhatsApp Image 2020-09-05 at 9.46.18 PM.jpeg" style="width:100%">
+    <div class="text">Priyanka--- ni Peru lone undhi priyamina ani. You are the one <br>having beautiful  heart in and out. Nv akkada unnav jokes vesthu andarini navisthav. You never have negative thoughts and you always boost up yourself, that self confidence in you I like the most. One thing I want to tell you is you won't share anything even it is happy or sad moments.</div>
+  </div>
+  <div class="mySlides1 fade">
+    <div class="numbertext">5/ 5</div>
+    <img src="./Priyanka/WhatsApp Image 2020-09-10 at 8.31.22 PM.jpeg" style="width:100%">
+    <div class="text"> Miss Imaginative always imagines very big for small joke😅lvu nd all d best for ur future.</div>
+    
+  </div>
+  
+  
+  
+  <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot1" onclick="currentSlide1(1)"></span> 
+    <span class="dot1" onclick="currentSlide1(2)"></span> 
+    <span class="dot1" onclick="currentSlide1(3)"></span>
+    <span class="dot1" onclick="currentSlide1(4)"></span>
+    <span class="dot1" onclick="currentSlide1(5)"></span>
+    
+  </div>
+  
+  <script>
+    var slideIndex1 = 1;
+    showSlides1(slideIndex1);
+    
+    function plusSlides1(n) {
+      showSlides1(slideIndex1 += n);
+    }
+    
+    function currentSlide1(n) {
+      showSlides1(slideIndex1 = n);
+    }
+    
+    function showSlides1(n) {
+      var i;
+      var slides1 = document.getElementsByClassName("mySlides1");
+      var dots1 = document.getElementsByClassName("dot1");
+      if (n > slides1.length) {slideIndex1 = 1}    
+      if (n < 1) {slideIndex1 = slides1.length}
+      for (i = 0; i < slides1.length; i++) {
+          slides1[i].style.display = "none";  
+      }
+      for (i = 0; i < dots1.length; i++) {
+          dots1[i].className = dots1[i].className.replace(" active", "");
+      }
+      slides1[slideIndex1-1].style.display = "block";  
+      dots1[slideIndex1-1].className += " active";
+    }
+    </script>
+  
+
+    <article id="MY-MESSAGE">
+           <h2> You Know all about me,I know all about you, </h2>
+           <h1> We're best friends,yada yada yada.</h1>
+           <h2> Since we can read each other's minds</h2>
+           <h1> I don't need a creative message.</h1>
+    </article>
+    <hr>
+      
+     
+        
+    <div class="slideshow-container" id="GALLERY">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="./Priyanka/IMG_20190602_191837.jpg" style="width:800px;height:500px">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="./Priyanka/IMG_20190905_160431.jpg" style="width:800px;height:500px">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="./Priyanka/IMG_20190905_160615.jpg" style="width:800px;height:500px">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+              <img src="./Priyanka/InShot_20190603_155814825.jpg" style="width:800px;height:500px">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+              <img src="./Priyanka/IMG_20190911_142517.jpg" style="width:800px;height:500px">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+              <img src="./Priyanka/Snapchat-1895988184.jpg" style="width:700px;height:500px">
+          </div>
+        </div>
+        
+        
+        
+        </div>
+          
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span>
+           <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+        <script>
+          var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+        </script>
+<!--
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script> -->
+
+        
+     <section class="slide3" >
+         <div> <h1> PUTTINA ROJU SHUBAKANSHALUU PRIYANKAA</h1>      
+               <img src="./Priyanka/pexels-photo-796605.jpeg" alt=""style="width:100%;height:100px;">
+        </div>
+         
+     </section>   
+        
+        
+          
+          
+  
+    </body>
+    
+    
+</html>
